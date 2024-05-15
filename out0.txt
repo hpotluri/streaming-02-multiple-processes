@@ -1,26 +1,25 @@
-spot@sudeeps-mbp streaming-02-multiple-processes % python3 multiple_processes.py
-2024-05-15 11:59:33,985 - INFO - 
 ======================================================================
 STARTING UP.............................
-  Date and Time:    2024-05-15 at 11:59 AM
+  Date and Time:    2024-05-15 at 01:16 PM
   Operating System: posix Darwin 22.6.0
   Python Version:   3.12.3
   Path to Interpreter:  /usr/local/opt/python@3.12/bin/python3.12
 ======================================================================
 
-2024-05-15 11:59:33,985 - INFO - Called recreate_database().
-2024-05-15 11:59:33,985 - INFO - Called drop_table().
-2024-05-15 11:59:33,993 - INFO - Table 'pets' dropped successfully.
-2024-05-15 11:59:33,993 - INFO - Called create_table().
-2024-05-15 11:59:33,996 - INFO - Table 'pets' created successfully.
-2024-05-15 11:59:34,128 - INFO - Called process_one().
-2024-05-15 11:59:34,128 - INFO -   Called insert_pet() with process=P1, name=Ace, breed=Dog.
-2024-05-15 11:59:34,130 - INFO - Called process_two().
-2024-05-15 11:59:34,130 - INFO -   Called insert_pet() with process=P2, name=Cooper, breed=Rabbit.
-2024-05-15 11:59:34,132 - INFO - Called process_three().
-2024-05-15 11:59:34,132 - INFO -   Called insert_pet() with process=P3, name=Emma, breed=Rabbit.
-2024-05-15 11:59:37,134 - INFO -   Called insert_pet() with process=P1, name=Buddy, breed=Dog.
-2024-05-15 11:59:39,262 - ERROR - ERROR while P2 inserting pet Cooper: database is locked
-2024-05-15 11:59:39,262 - INFO -   Called insert_pet() with process=P2, name=Dingo, breed=Dog.
-2024-05-15 11:59:39,288 - ERROR - ERROR while P3 inserting pet Emma: database is locked
-2024-05-15 11:59:39,288 - INFO -   Called insert_pet() with process=P3, name=Felix, breed=Cat.
+2024-05-15 13:16:24,987 - INFO - Called recreate_database().
+2024-05-15 13:16:24,987 - INFO - Called drop_table().
+2024-05-15 13:16:24,990 - INFO - Table 'pets' dropped successfully.
+2024-05-15 13:16:24,990 - INFO - Called create_table().
+2024-05-15 13:16:24,992 - INFO - Table 'pets' created successfully.
+2024-05-15 13:16:25,082 - INFO - Called process_one().
+2024-05-15 13:16:25,083 - INFO -   Called insert_pet() with process=P1, name=Ace, breed=Dog.
+2024-05-15 13:16:25,083 - INFO - Called process_two().
+2024-05-15 13:16:25,083 - INFO -   Called insert_pet() with process=P2, name=Cooper, breed=Rabbit.
+2024-05-15 13:16:25,085 - INFO - Called process_three().
+2024-05-15 13:16:25,085 - INFO -   Called insert_pet() with process=P3, name=Emma, breed=Rabbit.
+2024-05-15 13:16:28,086 - INFO -   Called insert_pet() with process=P1, name=Buddy, breed=Dog.
+2024-05-15 13:16:30,211 - ERROR - ERROR while P3 inserting pet Emma: database is locked
+2024-05-15 13:16:30,211 - INFO -   Called insert_pet() with process=P3, name=Felix, breed=Cat.
+2024-05-15 13:16:30,221 - ERROR - ERROR while P2 inserting pet Cooper: database is locked
+2024-05-15 13:16:30,221 - INFO -   Called insert_pet() with process=P2, name=Dingo, breed=Dog.
+spot@sudeeps-mbp streaming-02-multiple-processes % 
